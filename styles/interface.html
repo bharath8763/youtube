@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Intro Animation (with SVG Logo)</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .yt-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .yt-svg-logo {
+      width: 180px;
+      height: 120px;
+      opacity: 0;
+      transform: scale(0.7);
+      animation: logoPop 1s 0.3s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+      filter: drop-shadow(0 0 40px #fff3);
+    }
+    .yt-text {
+      color: #fff;
+      font-family: Arial Black, Arial, sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      opacity: 0;
+      transform: translateX(40px);
+      animation: textSlide 0.8s 1s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+      text-shadow: 0 0 10px #e62117, 0 0 20px #fff;
+      user-select: none;
+    }
+    @keyframes logoPop {
+      0% { opacity: 0; transform: scale(0.7);}
+      60% { opacity: 1; }
+      100% { opacity: 1; transform: scale(1);}
+    }
+    @keyframes textSlide {
+      0% { opacity: 0; transform: translateX(40px);}
+      100% { opacity: 1; transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="yt-logo-row">
+    <img src="icons/youtube-logo.svg" alt="YouTube Logo" class="yt-svg-logo">
+    <div class="yt-text">YouTube</div>
+  </div>
+</body>
+</html>

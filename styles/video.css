@@ -1,0 +1,69 @@
+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin: 0px;
+        }
+        .t1{
+            width: 100%;
+            display: block;
+        }
+       
+        .tittle{
+           margin-top: 0px; 
+           width: 280px;
+           font-size: 15px;
+           line-height: 20px;
+        }
+        
+        .chanel{
+                    display: inline-block; 
+                    width: 50px;  
+                     vertical-align: top ;
+                }
+        .info{
+                    display: inline-block;
+                    width: 200px;
+                }
+        .cha{
+                    width: 40px; 
+                    border-radius: 40px;
+                }
+        .tt1{
+            margin-bottom: 12px;
+            position:relative;       }
+        .author{
+            color: grey;
+            font-size: 13px;
+        }
+        .due{
+            color: grey;
+            font-size: 13px;
+            line-height: 3px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .totgrid{
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             column-gap: 22px; 
+             row-gap: 20px;
+        } 
+        .video-time{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            font-size: 13px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: white;
+            position: absolute;
+            bottom: 8px;
+            right: 5px;
+            border-radius: 3px;
+            
+
+        }
